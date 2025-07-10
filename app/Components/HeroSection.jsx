@@ -8,11 +8,11 @@ export default function HeroSection() {
   return (
     <div className="w-full md:h-[85vh] flex justify-center items-center text-white font-funnel px-40">
       <div className="md:flex w-full md:justify-between">
-        <div className="flex flex-col gap-2 justify-between">
-          <div className="flex items-center gap-2">
+        <div className="flex flex-col gap-2 justify-end">
+          {/* <div className="flex items-center gap-2">
             <span className="w-2 h-2 bg-white"></span>
             <p className="uppercase">About me</p>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-2 justify-end">
             <div>
               <Image
