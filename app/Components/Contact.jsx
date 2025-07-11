@@ -54,63 +54,72 @@ export default function Contact() {
                   – I'll get back to you.
                 </SheetDescription>
               </SheetHeader>
-              <div className="px-5 grid grid-cols-2 gap-x-4 gap-y-5">
-                <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
-                  <p className="text-sm font-thin">Name</p>
-                  <input
-                    type="text"
-                    name="name"
-                    id=""
-                    placeholder="Your full name"
-                    className="text-base outline-none"
-                  />
+
+              <form
+                action="https://formsubmit.co/aayushcyy@gmail.com"
+                method="POST"
+              >
+                <div className="px-5 grid grid-cols-2 gap-x-4 gap-y-5">
+                  <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
+                    <p className="text-sm font-thin">Name</p>
+                    <input
+                      type="text"
+                      name="name"
+                      id=""
+                      placeholder="Your full name"
+                      className="text-base outline-none"
+                    />
+                  </div>
+                  <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
+                    <p className="text-sm font-thin">Pursue</p>
+                    <input
+                      type="text"
+                      name="name"
+                      id=""
+                      placeholder="Your company"
+                      className="text-base outline-none"
+                    />
+                  </div>
+                  <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
+                    <p className="text-sm font-thin">Email</p>
+                    <input
+                      type="text"
+                      name="name"
+                      id=""
+                      placeholder="Your email address"
+                      className="text-base outline-none"
+                    />
+                  </div>
+                  <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
+                    <p className="text-sm font-thin">Phone</p>
+                    <input
+                      type="text"
+                      name="name"
+                      id=""
+                      placeholder="Your phone number"
+                      className="text-base outline-none"
+                    />
+                  </div>
+                  <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
+                    <p className="text-sm font-thin">Project Details</p>
+                    <textarea
+                      rows={4}
+                      name="name"
+                      id=""
+                      placeholder="Briefly describe your project"
+                      className="text-base outline-none h-40"
+                    />
+                  </div>
                 </div>
-                <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
-                  <p className="text-sm font-thin">Pursue</p>
-                  <input
-                    type="text"
-                    name="name"
-                    id=""
-                    placeholder="Your company"
-                    className="text-base outline-none"
-                  />
+                <div className="flex justify-start mt-5 ml-5">
+                  <button
+                    className="bg-white text-black px-4 py-2 font-medium text-lg cursor-pointer rounded-sm"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
                 </div>
-                <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
-                  <p className="text-sm font-thin">Email</p>
-                  <input
-                    type="text"
-                    name="name"
-                    id=""
-                    placeholder="Your email address"
-                    className="text-base outline-none"
-                  />
-                </div>
-                <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
-                  <p className="text-sm font-thin">Phone</p>
-                  <input
-                    type="text"
-                    name="name"
-                    id=""
-                    placeholder="Your phone number"
-                    className="text-base outline-none"
-                  />
-                </div>
-                <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
-                  <p className="text-sm font-thin">Project Details</p>
-                  <textarea
-                    rows={4}
-                    name="name"
-                    id=""
-                    placeholder="Briefly describe your project"
-                    className="text-base outline-none h-40"
-                  />
-                </div>
-              </div>
-              <div className="flex justify-start mt-5 ml-5">
-                <div className="bg-white text-black px-4 py-2 font-medium text-lg cursor-pointer rounded-sm">
-                  Submit
-                </div>
-              </div>
+              </form>
             </SheetContent>
           </Sheet>
         </div>
