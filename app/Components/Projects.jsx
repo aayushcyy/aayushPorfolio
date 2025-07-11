@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import cafeImage from "../../public/cafe-eloy.png";
 import approved from "../../public/approved_logo.png";
+import bdayCard from "../../public/bdayCard.png";
 import { Button } from "@/components/ui/button";
-import { Github, Eye, BookOpen } from "lucide-react";
+import { Github, Eye, BookOpen, ArrowDown, ArrowUp } from "lucide-react";
 import {
   Popover,
   PopoverContent,
@@ -15,8 +16,11 @@ export default function Projects() {
   const [expOpen, setExpOpen] = useState(false);
   const [linkForP1, setLinkForP1] = useState(false);
   const [linkForP2, setLinkForP2] = useState(false);
+  const [linkForP3, setLinkForP3] = useState(false);
+  const [showMore, setShowMore] = useState(false);
+
   return (
-    <div className="w-full md:h-screen flex justify-center items-start text-white font-funnel px-40">
+    <div className="w-full md:min-h-screen flex justify-center items-start text-white font-funnel px-40">
       <div className="md:flex w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">
@@ -198,6 +202,8 @@ export default function Projects() {
                         <a
                           href="https://github.com/aayushcyy/slackBot"
                           className="flex items-center gap-1.5"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <Github /> View Code
                         </a>
@@ -232,6 +238,104 @@ export default function Projects() {
                 )}
               </div>
             </div>
+          </div>
+          {showMore && (
+            <div
+              className="flex w-full p-5 rounded-lg gap-10 h-full bg-[#171717]"
+              onMouseEnter={() => setLinkForP3(true)}
+              onMouseLeave={() => setLinkForP3(false)}
+            >
+              <div className="w-1/2 h-full flex items-center justify-center">
+                <div className="w-full h-44 mt-3 flex items-center justify-center overflow-hidden rounded-md relative">
+                  <Image
+                    src={bdayCard}
+                    width={600}
+                    height={600}
+                    alt="Cafe Booking Project"
+                    className="object-cover object-center w-full h-full"
+                  />
+                  {linkForP3 && (
+                    <div className="w-full h-full absolute flex items-center justify-center bg-[#000000c7] transition-all duration-300">
+                      <div className="flex items-center gap-5 mt-3">
+                        <Button
+                          variant="outline"
+                          className="bg-white text-black hover:bg-[#dfdfdf] transition-all ease-in-out duration-300 cursor-pointer"
+                          asChild
+                        >
+                          <a
+                            href={"https://www.bdaycard.online/"}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1.5"
+                          >
+                            <Eye /> Live Demo
+                          </a>
+                        </Button>
+                        <Button
+                          variant="outline"
+                          className="bg-white text-black hover:bg-[#dfdfdf] transition-all ease-in-out duration-300 cursor-pointer"
+                          asChild
+                        >
+                          <a
+                            href={"https://github.com/aayushcyy/birthday-site"}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1.5"
+                          >
+                            <Github /> View Code
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 w-[70%]">
+                <p className="text-2xl font-medium mb-1">
+                  BdayCard Generator - Interactive Birthday Card Creator
+                </p>
+                <p className="font-thin">
+                  Created a personalized birthday card generator tool to create
+                  and share personalized birthday cards with animations,
+                  voice-based candle blowing, and a confetti celebration for the
+                  recipient.
+                </p>
+                <div className="w-full flex flex-wrap gap-x-1 gap-y-1">
+                  {[
+                    "NextJs",
+                    "Firebase",
+                    "Tailwind",
+                    "Framer Motion",
+                    "GSAP",
+                  ].map((item, index) => (
+                    <div key={index}>
+                      <div
+                        className="flex text-xs font-medium items-center gap-2 px-2 py-1 rounded-sm bg-[#161616e9] border-[1px] border-[#333333] hover:bg-[#2a2a2a] text-white hover:text-white cursor-pointer"
+                        aria-label="Toggle italic"
+                      >
+                        {item}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* View More Projects */}
+          <div
+            className="w-full flex items-center justify-center border-2 border-[#ffffff55] py-2 rounded-full cursor-pointer hover:bg-gradient-to-r from-[#ecfcfa0e] from-0% via-[#0ea4e91a] via-50% to-[#c028d40f] to-100%"
+            onClick={() => setShowMore(!showMore)}
+          >
+            {showMore ? (
+              <p className="flex text-xl items-center gap-2">
+                Show Less <ArrowUp />
+              </p>
+            ) : (
+              <p className="flex text-lg items-center gap-2">
+                Show More <ArrowDown />
+              </p>
+            )}
           </div>
         </div>
       </div>
