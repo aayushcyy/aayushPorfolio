@@ -6,7 +6,7 @@ import { ArrowDownToLine } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <div className="w-full md:h-[90vh] flex justify-center items-center text-white font-funnel px-40">
+    <div className="w-full md:h-[100vh] flex justify-center items-center text-white font-funnel px-40">
       <div className="md:flex w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-end">
           {/* <div className="flex items-center gap-2">
@@ -35,9 +35,14 @@ export default function HeroSection() {
             and user-friendly web applications. I help you make a lasting
             impression online through clean code and impactful design.
           </p>
-          <Button variant="outline" className="text-black cursor-pointer">
-            Download Resume <ArrowDownToLine />
-          </Button>
+          <a
+            href="/aayush-chaudhary.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium py-2 px-4 rounded-md text-base cursor-pointer bg-white text-black flex items-center gap-2"
+          >
+            Resume <ArrowDownToLine className="size-5" />
+          </a>
         </div>
       </div>
     </div>

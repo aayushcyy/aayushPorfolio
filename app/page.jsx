@@ -10,11 +10,21 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black">
       <Navbar />
-      <HeroSection />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+      <div id="home">
+        <HeroSection />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="experience">
+        <Experience />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </div>
   );
 }

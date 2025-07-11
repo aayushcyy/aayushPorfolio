@@ -14,10 +14,11 @@ import {
   Github,
   Instagram,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
-    <div className="w-full h-screen font-funnel text-white px-40 pt-32">
+    <div className="w-full h-screen flex flex-col justify-start gap-16 pt-28 font-funnel text-white px-40  relative overflow-hidden">
       {/* Heading */}
       <div className="flex justify-between">
         <div className="flex flex-col gap-5">
@@ -33,7 +34,7 @@ export default function Contact() {
         {/* Sheet Opener */}
         <div className="flex items-center">
           <Sheet>
-            <SheetTrigger className="font-funnel text-white bg-[#171717] text-lg px-4 py-2 cursor-pointer rounded-md">
+            <SheetTrigger className="font-funnel text-white bg-[#2f2f2f] text-lg px-4 py-2 cursor-pointer rounded-md hover:text-black hover:bg-white transition-all duration-300">
               Start Project
             </SheetTrigger>
             <SheetContent className="bg-black text-white font-funnel !w-[700px] !max-w-none  pt-13 pl-10 pr-12">
@@ -114,23 +115,47 @@ export default function Contact() {
           </Sheet>
         </div>
       </div>
-      <div className="grid grid-cols-3">
+      <span className="h-[1px] w-full bg-[#ffffff6d]"></span>
+      <div className="flex justify-between z-20">
         <div className="flex flex-col text-2xl gap-2">
-          <p className="text-[#ffffffc8]">email</p>
-          <a href="mailto:aayushcyy@gmail.com">aayushcyy@gmail.com</a>
+          <p className="text-[#ffffff80]">email</p>
+          <a
+            href="mailto:aayushcyy@gmail.com"
+            className="hover:text-cyan-500 transition-all duration-250"
+          >
+            aayushcyy@gmail.com
+          </a>
         </div>
         <div>
           <div className="flex items-center">
-            Resume <ArrowDownToLine className="size-4" />
+            <a
+              href="/aayush-chaudhary.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium py-2 px-4 rounded-md text-base cursor-pointer bg-white text-black flex items-center gap-2"
+            >
+              Resume <ArrowDownToLine className="size-5" />
+            </a>
           </div>
         </div>
-        <div>
-          <Linkedin />
-          <Github />
-          <Twitter />
-          <Instagram />
+        <div className="flex gap-8">
+          <a href="">
+            <Linkedin className="hover:text-blue-500 transform transition-transform duration-300 hover:-translate-y-1 size-8" />
+          </a>
+          <a href="">
+            <Github className="transform transition-transform duration-300 hover:-translate-y-1 size-8" />
+          </a>
+          <a href="">
+            <Twitter className="hover:text-sky-400 transform transition-transform duration-300 hover:-translate-y-1 size-8" />
+          </a>
+          <a href="">
+            <Instagram className="hover:text-[#e11d48] transform transition-transform duration-300 hover:-translate-y-1 size-8" />
+          </a>
         </div>
       </div>
+      <p className="uppercase absolute -bottom-32 text-[#ffffff0a] text-[300px] font-medium font-funnel">
+        aayush
+      </p>
     </div>
   );
 }

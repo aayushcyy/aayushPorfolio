@@ -17,7 +17,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="z-50 bg-black border-b-[1px] border-[#373636] text-white font-funnel ">
+    <nav className="z-50 bg-black/10 backdrop-blur-lg border-white/10 border-b-[1px]  text-white font-funnel fixed w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-2">
           {/* Logo */}
@@ -31,7 +31,7 @@ export default function Navbar() {
                 className="w-10"
               />
             </div> */}
-            <Link href={"/"} className="">
+            <Link href={`#home`} className="">
               Aayush Chaudhary
             </Link>
           </div>
@@ -41,7 +41,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <div key={item.id}>
                 <Link
-                  href={`/${item.id}`}
+                  href={`#${item.id}`}
                   className="hover:text-cyan-400 transition-all duration-300 ease-in-out"
                 >
                   {item.label}
