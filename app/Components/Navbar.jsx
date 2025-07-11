@@ -31,7 +31,9 @@ export default function Navbar() {
                 className="w-10"
               />
             </div> */}
-            <span className="">Aayush Chaudhary</span>
+            <Link href={"/"} className="">
+              Aayush Chaudhary
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
