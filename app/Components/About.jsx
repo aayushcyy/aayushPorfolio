@@ -55,7 +55,7 @@ export default function About() {
     { name: "Redux", icon: "SiRedux", color: "#764ABC" },
   ];
   return (
-    <div className="w-full md:h-[85vh] flex justify-center items-center text-white font-funnel px-40">
+    <div className="w-full md:h-screen flex justify-center items-center text-white font-funnel px-40">
       <div className="md:flex w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">
@@ -71,37 +71,90 @@ export default function About() {
             Constantly evolving with the latest technologies, I strive to
             deliver cutting-edge solutions.
           </p>
-          <p className="text-lg font-thin mt-3">
+          <p className="text-lg font-thin my-4">
             Here are the tools and technologies I work with:
           </p>
-          <div className="flex flex-wrap gap-2">
-            {techSkills.map((skill, index) => {
-              const IconComponent = icons[skill.icon];
-              return (
-                <Toggle
-                  key={index}
-                  className="flex items-center gap-2 px-4 py-2 bg-[#161616e9] border-[1px] border-[#333333] hover:bg-[#2a2a2a] text-white hover:text-white cursor-pointer"
-                >
-                  <IconComponent size={20} color={skill.color} />
-                  <span className="text-sm">{skill.name}</span>
-                </Toggle>
-              );
-            })}
-          </div>
-          <div className="w-full flex flex-col">
-            <div className="flex flex-col gap-2">
-              <div className="flex justify-between">
-                <div className="flex">
-                  <Sparkles />
-                  <p>Frontend Development</p>
+          <div className="flex gap-20">
+            {/* Skills */}
+            <div className="flex flex-wrap gap-x-3 w-[90%]">
+              {techSkills.map((skill, index) => {
+                const IconComponent = icons[skill.icon];
+                return (
+                  <Toggle
+                    key={index}
+                    className="flex items-center gap-2 px-4 py-2 bg-[#161616e9] border-[1px] border-[#333333] hover:bg-[#2a2a2a] text-white hover:text-white cursor-pointer"
+                  >
+                    <IconComponent size={20} color={skill.color} />
+                    <span className="text-sm">{skill.name}</span>
+                  </Toggle>
+                );
+              })}
+            </div>
+            {/* Progress Bars */}
+            <div className="w-full flex flex-col gap-7">
+              {/* Frontend */}
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between text-xl">
+                  <div className="flex items-center gap-3">
+                    <Sparkles className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
+                    <p className="">Frontend Development</p>
+                  </div>
+                  <p>95%</p>
                 </div>
-                <p>95%</p>
+                <div>
+                  <Progress
+                    value={93}
+                    className="bg-[#494848] [&>div]:bg-white h-3"
+                  />
+                </div>
               </div>
-              <div>
-                <Progress
-                  value={93}
-                  className="bg-[#494848] [&>div]:bg-white"
-                />
+              {/* Backend */}
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between text-xl">
+                  <div className="flex items-center gap-3">
+                    <Server className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
+                    <p className="">Backend Development</p>
+                  </div>
+                  <p>90%</p>
+                </div>
+                <div>
+                  <Progress
+                    value={90}
+                    className="bg-[#494848] [&>div]:bg-white h-3"
+                  />
+                </div>
+              </div>
+              {/* Database */}
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between text-xl">
+                  <div className="flex items-center gap-3">
+                    <Database className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
+                    <p className="">Database Management</p>
+                  </div>
+                  <p>85%</p>
+                </div>
+                <div>
+                  <Progress
+                    value={85}
+                    className="bg-[#494848] [&>div]:bg-white h-3"
+                  />
+                </div>
+              </div>
+              {/* Fullstack */}
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between text-xl">
+                  <div className="flex items-center gap-3">
+                    <Code className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
+                    <p className="">Full Stack Integration</p>
+                  </div>
+                  <p>92%</p>
+                </div>
+                <div>
+                  <Progress
+                    value={92}
+                    className="bg-[#494848] [&>div]:bg-white h-3"
+                  />
+                </div>
               </div>
             </div>
           </div>
