@@ -55,7 +55,7 @@ export default function About() {
     { name: "Redux", icon: "SiRedux", color: "#764ABC" },
   ];
   return (
-    <div className="w-full md:h-screen flex justify-center items-center text-white font-funnel px-40">
+    <div className="w-full flex justify-center items-center text-white font-funnel px-40 py-20">
       <div className="md:flex w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">

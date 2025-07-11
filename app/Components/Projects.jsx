@@ -20,7 +20,7 @@ export default function Projects() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="w-full md:min-h-screen flex justify-center items-start text-white font-funnel px-40">
+    <div className="w-full md:min-h-screen flex justify-center items-start text-white font-funnel px-40 py-20">
       <div className="md:flex w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">

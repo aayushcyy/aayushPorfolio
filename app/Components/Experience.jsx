@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 
 export default function Experience() {
-  const [expOpen, setExpOpen] = useState(false);
+  const [expOpen, setExpOpen] = useState(true);
   return (
-    <div className="w-full md:h-[100vh] flex justify-center items-start pt-20 text-white font-funnel px-40">
+    <div className="w-full  flex justify-center items-start pt-20 text-white font-funnel px-40 py-20">
       <div className="md:flex w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">
