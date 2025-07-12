@@ -8,7 +8,7 @@ import Contact from "./Components/Contact";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black w-full overflow-x-hidden">
       <Navbar />
       <div id="home" className="border-b-[1px] border-[#ffffff2a]">
         <HeroSection />

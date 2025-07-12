@@ -148,16 +148,32 @@ export default function Contact() {
           </div>
         </div>
         <div className="flex gap-8">
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/aayushcyy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Linkedin className="hover:text-blue-500 transform transition-transform duration-300 hover:-translate-y-1 size-8" />
           </a>
-          <a href="">
+          <a
+            href="https://github.com/aayushcyy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github className="transform transition-transform duration-300 hover:-translate-y-1 size-8" />
           </a>
-          <a href="">
+          <a
+            href="https://x.com/aayucyy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Twitter className="hover:text-sky-400 transform transition-transform duration-300 hover:-translate-y-1 size-8" />
           </a>
-          <a href="">
+          <a
+            href="https://www.instagram.com/aayushcyy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Instagram className="hover:text-[#e11d48] transform transition-transform duration-300 hover:-translate-y-1 size-8" />
           </a>
         </div>
