@@ -18,9 +18,9 @@ export default function Navbar() {
     <>
       <nav className="z-50 bg-black/10 backdrop-blur-lg border-white/10 border-b-[1px]  text-white font-funnel fixed w-full lg:px-[10.5%] px-5">
         <div className="">
-          <div className="flex justify-between items-center md:py-2 py-1">
+          <div className="flex justify-between items-center md:py-2 py-1.5">
             {/* Logo */}
-            <div className="md:text-2xl text-lg md:font-bold flex items-center md:gap-2">
+            <div className="md:text-2xl text-xl md:font-bold flex items-center md:gap-2">
               <Link href={`#home`} className="">
                 Aayush Chaudhary
               </Link>
