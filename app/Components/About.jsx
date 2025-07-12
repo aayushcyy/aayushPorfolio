@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useInViewOnce } from "../Hooks/useInViewOnce.js";
 import { Toggle } from "@/components/ui/toggle";
 import { Sparkles, Server, Database, Code } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
@@ -56,7 +57,7 @@ export default function About() {
   ];
   return (
     <div className="w-full flex justify-center items-center text-white font-funnel md:px-40 px-5 md:py-20 py-10">
-      <div className="flex md:flex-row flex-col gap-20 w-full md:justify-between">
+      <div className="flex md:flex-row flex-col gap-15 w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 bg-white"></span>

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { ArrowDownToLine } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +17,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="z-50 bg-black/10 backdrop-blur-lg border-white/10 border-b-[1px]  text-white font-funnel fixed w-full lg:px-[10.5%] px-5">
-        <div className="">
-          <div className="flex justify-between items-center md:py-2 py-1.5">
+      <nav className="z-50 backdrop-blur-lg border-white/10 border-b-[1px]  text-white font-funnel fixed w-full lg:px-[10.5%] px-5">
+        <div>
+          <div className="flex justify-between w-full items-center md:py-2 py-1.5">
             {/* Logo */}
             <div className="md:text-2xl text-xl md:font-bold flex items-center md:gap-2">
               <Link href={`#home`} className="">
@@ -39,22 +40,39 @@ export default function Navbar() {
                 </div>
               ))}
             </div>
-            <div className="hidden md:flex space-x-8 items-center gap-1 cursor-pointer hover:text-cyan-400 transition-all duration-300 ease-in-out">
+            <div className="hidden md:flex space-x-8 justify-end items-center gap-1 cursor-pointer hover:text-cyan-400 transition-all duration-300 ease-in-out">
               Resume <ArrowDownToLine className="size-4" />
             </div>
-            <div className="flex md:hidden space-x-8 items-center gap-1 cursor-pointer">
-              <ArrowDownToLine className="size-4" />
-            </div>
+            <motion.div
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeIn" }}
+              className="flex md:hidden"
+            >
+              <a
+                href="/aayush-chaudhary.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex md:hidden space-x-8 items-center gap-1 cursor-pointer"
+              >
+                <ArrowDownToLine className="size-4" />
+              </a>
+            </motion.div>
           </div>
         </div>
       </nav>
-      {/* <div className="md:hidden absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] rounded-lg bg-foreground/10 backdrop-blur-sm border border-foreground/20 text-foreground transition-all duration-300 flex justify-around py-4 font-light items-center text-sm z-50 text-white">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 w-[90%] rounded-full bg-foreground/30 backdrop-blur-sm transition-all duration-300 flex justify-around py-4  items-center text-sm z-50 text-white border-[1px] border-[#ffffff2c]"
+      >
         {navItems.map((item) => (
           <div key={item.id}>
-            <Link href={`/${item.id}`}>{item.label}</Link>
+            <Link href={`#${item.id}`}>{item.label}</Link>
           </div>
         ))}
-      </div> */}
+      </motion.div>
     </>
   );
 }

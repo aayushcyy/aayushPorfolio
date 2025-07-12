@@ -178,7 +178,7 @@ export default function Contact() {
           </a>
         </div>
       </div>
-      <p className="uppercase absolute md:-bottom-32 bottom-56 -left-14 text-[#ffffff11] md:text-[300px] text-[190px] font-medium font-funnel -rotate-90 md:rotate-0">
+      <p className="uppercase absolute md:-bottom-32 bottom-56 md:left-40 -left-14 text-[#ffffff11] md:text-[300px] text-[190px] font-medium font-funnel -rotate-90 md:rotate-0">
         aayush
       </p>
     </div>
