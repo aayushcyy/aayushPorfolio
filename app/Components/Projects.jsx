@@ -20,22 +20,24 @@ export default function Projects() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="w-full md:min-h-screen flex justify-center items-start text-white font-funnel px-40 py-20">
-      <div className="md:flex w-full md:justify-between">
+    <div className="w-full md:min-h-screen flex justify-center items-start text-white font-funnel md:px-40 px-5 md:py-20 py-10">
+      <div className="flex md:flex-row flex-col gap-20 w-full md:justify-between">
+        {/* Heading */}
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 bg-white"></span>
             <p className="uppercase">Projects</p>
           </div>
         </div>
-        <div className="w-[65%] h-full flex flex-col gap-5 items-start">
+        {/* Projects */}
+        <div className="md:w-[65%] h-full flex flex-col gap-5 items-start">
           {/* Project 1 */}
           <div
-            className="flex w-full p-5 rounded-lg gap-10 h-full bg-[#171717]"
+            className="flex md:flex-row flex-col w-full md:p-5 p-4 rounded-lg md:gap-10 gap-5 h-full bg-[#171717]"
             onMouseEnter={() => setLinkForP1(true)}
             onMouseLeave={() => setLinkForP1(false)}
           >
-            <div className="w-1/2 h-full flex items-center justify-center">
+            <div className="md:w-1/2 h-full flex items-center justify-center">
               <div className="w-full h-44 mt-1 flex items-center justify-center overflow-hidden rounded-md relative">
                 <Image
                   src={cafeImage}
@@ -80,8 +82,8 @@ export default function Projects() {
                 )}
               </div>
             </div>
-            <div className="flex flex-col gap-2 w-[70%]">
-              <p className="text-2xl font-medium mb-1">
+            <div className="flex flex-col gap-2 md:w-[70%]">
+              <p className="text-2xl md:font-medium mb-1">
                 Cafe Eloy - Website & Admin Panel
               </p>
               <p className="font-thin">
@@ -107,11 +109,11 @@ export default function Projects() {
           </div>
           {/* Project 2 */}
           <div
-            className="flex w-full p-5 rounded-lg gap-10 h-full bg-[#171717]"
+            className="flex md:flex-row flex-col w-full md:p-5 p-4 rounded-lg md:gap-10 gap-5 h-full bg-[#171717]"
             onMouseEnter={() => setLinkForP2(true)}
             onMouseLeave={() => setLinkForP2(false)}
           >
-            <div className="w-1/2 h-full flex items-center justify-center">
+            <div className="md:w-1/2 h-full flex items-center justify-center">
               <div className="w-full h-48 mt-1 flex items-center justify-center overflow-hidden rounded-md relative">
                 <Image
                   src={approved}
@@ -213,8 +215,8 @@ export default function Projects() {
                 )}
               </div>
             </div>
-            <div className="flex flex-col gap-2 w-[70%]">
-              <p className="text-2xl font-medium mb-1">
+            <div className="flex flex-col gap-2 md:w-[70%]">
+              <p className="text-2xl md:font-medium mb-1">
                 Approved - Slack-Based Approval Workflow
               </p>
               <p className="font-thin">
@@ -241,11 +243,11 @@ export default function Projects() {
           </div>
           {showMore && (
             <div
-              className="flex w-full p-5 rounded-lg gap-10 h-full bg-[#171717]"
+              className="flex md:flex-row flex-col w-full md:p-5 p-4  rounded-lg md:gap-10 gap-5 h-full bg-[#171717]"
               onMouseEnter={() => setLinkForP3(true)}
               onMouseLeave={() => setLinkForP3(false)}
             >
-              <div className="w-1/2 h-full flex items-center justify-center">
+              <div className="md:w-1/2 h-full flex items-center justify-center">
                 <div className="w-full h-44 mt-3 flex items-center justify-center overflow-hidden rounded-md relative">
                   <Image
                     src={bdayCard}
@@ -290,8 +292,8 @@ export default function Projects() {
                   )}
                 </div>
               </div>
-              <div className="flex flex-col gap-2 w-[70%]">
-                <p className="text-2xl font-medium mb-1">
+              <div className="flex flex-col gap-2 md:w-[70%]">
+                <p className="text-2xl md:font-medium mb-1">
                   BdayCard Generator - Interactive Birthday Card Creator
                 </p>
                 <p className="font-thin">
