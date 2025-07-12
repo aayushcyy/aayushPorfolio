@@ -18,13 +18,13 @@ import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
-    <div className="w-full h-screen flex flex-col justify-start gap-16 pt-28 font-funnel text-white px-40  relative overflow-hidden">
+    <div className="w-full h-screen flex flex-col justify-start md:gap-16 gap-12 pt-28 font-funnel text-white md:px-40 px-5  relative overflow-hidden">
       {/* Heading */}
-      <div className="flex justify-between">
-        <div className="flex flex-col gap-5">
-          <p className="text-5xl">
+      <div className="flex md:flex-row flex-col gap-8 md:gap-0 justify-between">
+        <div className="flex flex-col md:gap-5 gap-3">
+          <p className="md:text-5xl text-3xl">
             Ready to start your next project?
-            <br /> I am.
+            <br className="md:flex hidden" /> I am.
           </p>
           <p className="text-lg font-normal">
             Whether it's a freelance project or a full-time role, I'd love to
@@ -37,7 +37,7 @@ export default function Contact() {
             <SheetTrigger className="font-funnel text-white bg-[#2f2f2f] text-lg px-4 py-2 cursor-pointer rounded-md hover:text-black hover:bg-white transition-all duration-300">
               Start Project
             </SheetTrigger>
-            <SheetContent className="bg-black text-white font-funnel !w-[700px] !max-w-none  pt-13 pl-10 pr-12">
+            <SheetContent className="bg-black text-white font-funnel md:!w-[700px] !w-[90vw] !max-w-none md:pt-13 pt-5 md:pl-10 pl-2 md:pr-12 pb-15 md:overflow-auto overflow-y-auto max-h-[100dvh]">
               <SheetHeader>
                 <SheetTitle className="text-white text-3xl font-normal">
                   Request a project
@@ -59,7 +59,7 @@ export default function Contact() {
                 action="https://formsubmit.co/aayushcyy@gmail.com"
                 method="POST"
               >
-                <div className="px-5 grid grid-cols-2 gap-x-4 gap-y-5">
+                <div className="md:px-5 px-4 grid md:grid-cols-2 gap-x-4 gap-y-5">
                   <div className="bg-[#161616] rounded-md px-3 py-2 flex flex-col gap-1">
                     <p className="text-sm font-thin">Name</p>
                     <input
@@ -124,8 +124,8 @@ export default function Contact() {
           </Sheet>
         </div>
       </div>
-      <span className="h-[1px] w-full bg-[#ffffff6d]"></span>
-      <div className="flex justify-between z-20">
+      <span className="h-[1px] w-full bg-[#ffffff6d] mt-1 md:mt-0"></span>
+      <div className="flex md:flex-row flex-col md:gap-0 gap-13 justify-between z-20">
         <div className="flex flex-col text-2xl gap-2">
           <p className="text-[#ffffff80]">email</p>
           <a
@@ -178,7 +178,7 @@ export default function Contact() {
           </a>
         </div>
       </div>
-      <p className="uppercase absolute -bottom-32 text-[#ffffff0a] text-[300px] font-medium font-funnel">
+      <p className="uppercase absolute md:-bottom-32 bottom-56 -left-14 text-[#ffffff11] md:text-[300px] text-[190px] font-medium font-funnel -rotate-90 md:rotate-0">
         aayush
       </p>
     </div>
