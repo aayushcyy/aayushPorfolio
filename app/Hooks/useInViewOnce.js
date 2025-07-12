@@ -14,7 +14,11 @@ export function useInViewOnce(threshold = 0.3) {
           observer.disconnect(); // only trigger once
         }
       },
-      { threshold }
+      {
+        root: null,
+        threshold: 0.5,
+        rootMargin: "0px 0px -20% 0px",
+      }
     );
 
     observer.observe(ref.current);

@@ -5,6 +5,7 @@ import { useInViewOnce } from "../Hooks/useInViewOnce.js";
 import { Toggle } from "@/components/ui/toggle";
 import { Sparkles, Server, Database, Code } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
+import SkillBar from "./SkillBar.jsx";
 import {
   SiJavascript,
   SiTypescript,
@@ -94,7 +95,35 @@ export default function About() {
             {/* Progress Bars */}
             <div className="w-full flex flex-col gap-7">
               {/* Frontend */}
-              <div className="flex flex-col md:gap-4 gap-3">
+              <SkillBar
+                label="Frontend Development"
+                value={95}
+                icon={
+                  <Sparkles className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
+                }
+              />
+              <SkillBar
+                label="Backend Development"
+                value={90}
+                icon={
+                  <Server className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
+                }
+              />
+              <SkillBar
+                label="Database Management"
+                value={85}
+                icon={
+                  <Database className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
+                }
+              />
+              <SkillBar
+                label="Full Stack Integration"
+                value={92}
+                icon={
+                  <Code className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
+                }
+              />
+              {/* <div className="flex flex-col md:gap-4 gap-3">
                 <div className="flex justify-between text-xl">
                   <div className="flex items-center gap-3">
                     <Sparkles className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
@@ -108,9 +137,9 @@ export default function About() {
                     className="bg-[#494848] [&>div]:bg-white h-3"
                   />
                 </div>
-              </div>
+              </div> */}
               {/* Backend */}
-              <div className="flex flex-col md:gap-4 gap-3">
+              {/* <div className="flex flex-col md:gap-4 gap-3">
                 <div className="flex justify-between text-xl">
                   <div className="flex items-center gap-3">
                     <Server className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
@@ -124,9 +153,9 @@ export default function About() {
                     className="bg-[#494848] [&>div]:bg-white h-3"
                   />
                 </div>
-              </div>
+              </div> */}
               {/* Database */}
-              <div className="flex flex-col md:gap-4 gap-3">
+              {/* <div className="flex flex-col md:gap-4 gap-3">
                 <div className="flex justify-between text-xl">
                   <div className="flex items-center gap-3">
                     <Database className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
@@ -140,9 +169,9 @@ export default function About() {
                     className="bg-[#494848] [&>div]:bg-white h-3"
                   />
                 </div>
-              </div>
+              </div> */}
               {/* Fullstack */}
-              <div className="flex flex-col md:gap-4 gap-3">
+              {/* <div className="flex flex-col md:gap-4 gap-3">
                 <div className="flex justify-between text-xl">
                   <div className="flex items-center gap-3">
                     <Code className="bg-[#2A2A2A] size-9 cursor-pointer px-2 py-2 rounded-lg" />
@@ -156,7 +185,7 @@ export default function About() {
                     className="bg-[#494848] [&>div]:bg-white h-3"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
