@@ -11,7 +11,7 @@ export function useInViewOnce(threshold = 0.3) {
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          observer.disconnect(); // only trigger once
+          observer.disconnect();
         }
       },
       {
