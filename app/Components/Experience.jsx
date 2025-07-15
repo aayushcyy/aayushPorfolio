@@ -5,7 +5,7 @@ import React, { useState } from "react";
 export default function Experience() {
   const [expOpen, setExpOpen] = useState(true);
   return (
-    <div className="w-full flex justify-center items-start md:pt-20 text-white font-funnel lg:px-[10vw] md:px-40 px-5 md:py-20 py-10">
+    <div className="w-full flex justify-center items-start md:pt-20 text-white font-funnel lg:px-[10vw] md:px-[4vw] px-5 md:py-20 py-10">
       <div className="md:flex md:flex-row flex flex-col md:gap-0 gap-20 w-full md:justify-between relative">
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">

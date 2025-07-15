@@ -7,14 +7,14 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <div className="w-full md:h-[100vh] h-[90vh] flex md:justify-center md:items-center text-white font-funnel lg:px-[10vw] md:px-10 px-5 pt-24 md:pt-0">
-      <div className="flex md:flex-row flex-col md:gap-0 gap-[3.5rem] w-full md:justify-between">
+    <div className="w-full md:h-[100vh] h-[90vh] flex md:justify-center md:items-center text-white font-funnel lg:px-[10vw] md:px-[4vw] px-5 pt-24 md:pt-0">
+      <div className="flex lg:flex-row flex-col md:gap-44 gap-[3.5rem] w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-end">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="flex md:items-start items-end flex-col gap-2 justify-end"
+            className="flex lg:items-start items-end flex-col gap-2 justify-end"
           >
             <div>
               <Image
@@ -26,11 +26,11 @@ export default function HeroSection() {
             <div className="pl-1 md:text-base text-sm">Raipur, India</div>
           </motion.div>
         </div>
-        <div className="lg:w-[55%] sm:w-[75%] w-full h-full flex flex-col items-start md:gap-13 gap-2">
-          <p className="text-[clamp(1.5rem,_2vw_+_1rem,_5rem)] leading-tight">
+        <div className="lg:w-[55%] md:w-[100%] sm:w-[75%] w-full h-full flex flex-col items-start md:gap-13 gap-2">
+          <p className="text-[clamp(1.5rem,_2vw_+_1rem,_5rem)] md:text-5xl lg:text-[clamp(1.5rem,_2vw_+_1rem,_5rem)] leading-tight">
             Hi, I'm Aayush. <br /> A Full Stack Developer
           </p>
-          <p className="text-[clamp(1rem,_1rem_+_0.2vw,_2rem)] font-thin md:w-[75%] w-full">
+          <p className="text-[clamp(1rem,_1rem_+_0.2vw,_2rem)] md:text-xl lg:text-[clamp(1rem,_1rem_+_0.2vw,_2rem)] font-thin md:w-[75%] w-full">
             and designer crafting fast, scalable, and user-friendly web
             applications. I help you make a lasting impression online through
             clean code and impactful design.

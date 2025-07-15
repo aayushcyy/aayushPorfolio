@@ -57,7 +57,7 @@ export default function About() {
     { name: "Redux", icon: "SiRedux", color: "#764ABC" },
   ];
   return (
-    <div className="w-full flex justify-center items-center text-white font-funnel lg:px-[10vw] md:px-40 px-5 md:py-20 py-10">
+    <div className="w-full flex justify-center items-center text-white font-funnel lg:px-[10vw] md:px-[4vw] px-5 md:py-20 py-10">
       <div className="flex md:flex-row flex-col gap-15 w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">
@@ -67,13 +67,13 @@ export default function About() {
         </div>
         <div className="md:w-[70%] h-full flex flex-col items-start gap-4">
           <p className="text-3xl">Crafting Digital Excellence</p>
-          <p className="text-lg font-thin">
+          <p className="text-[clamp(1rem,_1rem_+_0.2vw,_2rem)] font-thin">
             I enjoy turning ideas into clean, functional digital experiences -
             bringing both frontend finesse and backend logic to the table.
             Constantly evolving with the latest technologies, I strive to
             deliver cutting-edge solutions.
           </p>
-          <p className="text-lg font-thin my-4">
+          <p className="text-[clamp(1rem,_1rem_+_0.2vw,_2rem)] font-thin my-4">
             Here are the tools and technologies I work with:
           </p>
           <div className="flex flex-col lg:gap-10 gap-12">
@@ -93,7 +93,7 @@ export default function About() {
               })}
             </div>
             {/* Progress Bars */}
-            <div className="lg:w-[65%] md:w-[100%] flex flex-col gap-5">
+            <div className="lg:w-[65%] md:w-[75%] flex flex-col gap-5">
               {/* Frontend */}
               <SkillBar
                 label="Frontend Development"

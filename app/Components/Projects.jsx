@@ -20,7 +20,7 @@ export default function Projects() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="w-full md:min-h-screen flex justify-center items-start text-white font-funnel lg:px-[10vw] md:px-40 px-5 md:py-20 py-10">
+    <div className="w-full lg:min-h-screen flex justify-center items-start text-white font-funnel lg:px-[10vw] md:px-[4vw] px-5 md:py-20 py-10">
       <div className="flex md:flex-row flex-col gap-20 w-full md:justify-between">
         {/* Heading */}
         <div className="flex flex-col gap-2 justify-between">
@@ -33,7 +33,7 @@ export default function Projects() {
         <div className="md:w-[70%] h-full flex flex-col gap-5 items-start">
           {/* Project 1 */}
           <div
-            className="flex md:flex-row flex-col w-full md:p-5 p-4 rounded-lg md:gap-10 lg:gap-5 gap-5 h-full bg-[#171717]"
+            className="flex md:flex-row flex-col w-full md:p-5 p-4 rounded-lg md:gap-5 lg:gap-5 gap-5 h-full bg-[#171717]"
             onMouseEnter={() => setLinkForP1(true)}
             onMouseLeave={() => setLinkForP1(false)}
           >
@@ -82,7 +82,7 @@ export default function Projects() {
                 )}
               </div>
             </div>
-            <div className="flex flex-col gap-2 lg:gap-1 md:w-[70%]">
+            <div className="flex flex-col gap-2 md:gap-1 md:w-[70%]">
               <p className="text-2xl mb-1">Cafe Eloy - Website & Admin Panel</p>
               <p className="font-thin">
                 A full-stack web application for a local café featuring online
@@ -107,7 +107,7 @@ export default function Projects() {
           </div>
           {/* Project 2 */}
           <div
-            className="flex md:flex-row flex-col w-full md:p-5 p-4 rounded-lg md:gap-10 gap-5 h-full bg-[#171717]"
+            className="flex md:flex-row flex-col w-full md:p-5 p-4 rounded-lg md:gap-5 gap-5 h-full bg-[#171717]"
             onMouseEnter={() => setLinkForP2(true)}
             onMouseLeave={() => setLinkForP2(false)}
           >
@@ -213,7 +213,7 @@ export default function Projects() {
                 )}
               </div>
             </div>
-            <div className="flex flex-col gap-2 md:w-[70%]">
+            <div className="flex flex-col gap-2 md:gap-1 md:w-[70%]">
               <p className="text-2xl mb-1">
                 Approved - Slack-Based Approval Workflow
               </p>
@@ -241,7 +241,7 @@ export default function Projects() {
           </div>
           {showMore && (
             <div
-              className="flex md:flex-row flex-col w-full md:p-5 p-4  rounded-lg md:gap-10 gap-5 h-full bg-[#171717]"
+              className="flex md:flex-row flex-col w-full md:p-5 p-4  rounded-lg md:gap-5 gap-5 h-full bg-[#171717]"
               onMouseEnter={() => setLinkForP3(true)}
               onMouseLeave={() => setLinkForP3(false)}
             >
@@ -290,7 +290,7 @@ export default function Projects() {
                   )}
                 </div>
               </div>
-              <div className="flex flex-col gap-2 md:w-[70%]">
+              <div className="flex flex-col gap-2 md:gap-1 md:w-[70%]">
                 <p className="text-2xl  mb-1">
                   BdayCard Generator - Interactive Birthday Card Creator
                 </p>

@@ -18,7 +18,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
-    <div className="w-full h-screen flex flex-col justify-start md:gap-16 gap-12 pt-28 font-funnel text-white lg:px-[10vw] md:px-40 px-5  relative overflow-hidden">
+    <div className="w-full h-screen md:h-[50vh] lg:h-screen flex flex-col justify-start md:gap-16 gap-12 pt-28 font-funnel text-white lg:px-[10vw] md:px-[4vw] px-5  relative overflow-hidden">
       {/* Heading */}
       <div className="flex md:flex-row flex-col gap-8 md:gap-0 justify-between">
         <div className="flex flex-col md:gap-5 gap-3">
@@ -178,7 +178,7 @@ export default function Contact() {
           </a>
         </div>
       </div>
-      <p className="uppercase absolute md:-bottom-32 bottom-56 md:left-40 -left-14 text-[#ffffff11] md:text-[300px] text-[190px] font-medium font-funnel -rotate-90 md:rotate-0">
+      <p className="uppercase absolute lg:-bottom-32 md:-bottom-24 bottom-56 md:left-4 lg:left-36 -left-10 text-[#ffffff11] lg:text-[300px] md:text-[230px] text-[190px] font-medium font-funnel -rotate-90 md:rotate-0">
         aayush
       </p>
     </div>
