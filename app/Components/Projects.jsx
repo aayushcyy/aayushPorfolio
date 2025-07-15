@@ -20,7 +20,7 @@ export default function Projects() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="w-full md:min-h-screen flex justify-center items-start text-white font-funnel md:px-40 px-5 md:py-20 py-10">
+    <div className="w-full md:min-h-screen flex justify-center items-start text-white font-funnel lg:px-[10vw] md:px-40 px-5 md:py-20 py-10">
       <div className="flex md:flex-row flex-col gap-20 w-full md:justify-between">
         {/* Heading */}
         <div className="flex flex-col gap-2 justify-between">
@@ -30,14 +30,14 @@ export default function Projects() {
           </div>
         </div>
         {/* Projects */}
-        <div className="md:w-[65%] h-full flex flex-col gap-5 items-start">
+        <div className="md:w-[70%] h-full flex flex-col gap-5 items-start">
           {/* Project 1 */}
           <div
-            className="flex md:flex-row flex-col w-full md:p-5 p-4 rounded-lg md:gap-10 gap-5 h-full bg-[#171717]"
+            className="flex md:flex-row flex-col w-full md:p-5 p-4 rounded-lg md:gap-10 lg:gap-5 gap-5 h-full bg-[#171717]"
             onMouseEnter={() => setLinkForP1(true)}
             onMouseLeave={() => setLinkForP1(false)}
           >
-            <div className="md:w-1/2 h-full flex items-center justify-center">
+            <div className="md:w-1/2 h-full flex items-center justify-center relative">
               <div className="w-full h-44 mt-1 flex items-center justify-center overflow-hidden rounded-md relative">
                 <Image
                   src={cafeImage}
@@ -48,7 +48,7 @@ export default function Projects() {
                 />
                 {linkForP1 && (
                   <div className="w-full h-full absolute flex items-center justify-center bg-[#000000c7] transition-all duration-300">
-                    <div className="flex items-center gap-5 mt-3">
+                    <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-2 mt-3">
                       <Button
                         variant="outline"
                         className="bg-white text-black hover:bg-[#dfdfdf] transition-all ease-in-out duration-300 cursor-pointer"
@@ -82,10 +82,8 @@ export default function Projects() {
                 )}
               </div>
             </div>
-            <div className="flex flex-col gap-2 md:w-[70%]">
-              <p className="text-2xl md:font-medium mb-1">
-                Cafe Eloy - Website & Admin Panel
-              </p>
+            <div className="flex flex-col gap-2 lg:gap-1 md:w-[70%]">
+              <p className="text-2xl mb-1">Cafe Eloy - Website & Admin Panel</p>
               <p className="font-thin">
                 A full-stack web application for a local café featuring online
                 cabin bookings, and a custom admin dashboard. Designed for
@@ -124,7 +122,7 @@ export default function Projects() {
                 />
                 {linkForP2 && (
                   <div className="w-full h-full absolute flex items-center justify-center bg-[#000000c7] transition-all duration-300">
-                    <div className="flex items-center gap-4 mt-3">
+                    <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-2 mt-3">
                       <Popover>
                         <PopoverTrigger className="bg-white text-black hover:bg-[#dfdfdf] transition-all ease-in-out duration-300 cursor-pointer text-sm font-medium flex items-center gap-2 px-4 py-2 rounded-md">
                           <BookOpen className="size-4" /> Docs
@@ -216,7 +214,7 @@ export default function Projects() {
               </div>
             </div>
             <div className="flex flex-col gap-2 md:w-[70%]">
-              <p className="text-2xl md:font-medium mb-1">
+              <p className="text-2xl mb-1">
                 Approved - Slack-Based Approval Workflow
               </p>
               <p className="font-thin">
@@ -258,7 +256,7 @@ export default function Projects() {
                   />
                   {linkForP3 && (
                     <div className="w-full h-full absolute flex items-center justify-center bg-[#000000c7] transition-all duration-300">
-                      <div className="flex items-center gap-5 mt-3">
+                      <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-2 mt-3">
                         <Button
                           variant="outline"
                           className="bg-white text-black hover:bg-[#dfdfdf] transition-all ease-in-out duration-300 cursor-pointer"
@@ -293,7 +291,7 @@ export default function Projects() {
                 </div>
               </div>
               <div className="flex flex-col gap-2 md:w-[70%]">
-                <p className="text-2xl md:font-medium mb-1">
+                <p className="text-2xl  mb-1">
                   BdayCard Generator - Interactive Birthday Card Creator
                 </p>
                 <p className="font-thin">

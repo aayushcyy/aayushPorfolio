@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="z-50 backdrop-blur-lg border-white/10 border-b-[1px]  text-white font-funnel fixed w-full lg:px-[10.5%] px-5">
+      <nav className="z-50 backdrop-blur-lg border-white/10 border-b-[1px]  text-white font-funnel fixed w-full lg:px-[10vw]  px-5">
         <div>
           <div className="flex justify-between w-full items-center md:py-2 py-1.5">
             {/* Logo */}

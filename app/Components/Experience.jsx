@@ -5,7 +5,7 @@ import React, { useState } from "react";
 export default function Experience() {
   const [expOpen, setExpOpen] = useState(true);
   return (
-    <div className="w-full flex justify-center items-start md:pt-20 text-white font-funnel md:px-40 px-5 md:py-20 py-10">
+    <div className="w-full flex justify-center items-start md:pt-20 text-white font-funnel lg:px-[10vw] md:px-40 px-5 md:py-20 py-10">
       <div className="md:flex md:flex-row flex flex-col md:gap-0 gap-20 w-full md:justify-between relative">
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">
@@ -13,7 +13,7 @@ export default function Experience() {
             <p className="uppercase">Experience</p>
           </div>
         </div>
-        <div className="md:w-[65%] h-full flex flex-col items-start ">
+        <div className="md:w-[70%] h-full flex flex-col items-start ">
           <div
             className={
               !expOpen
@@ -22,7 +22,7 @@ export default function Experience() {
             }
             onClick={() => setExpOpen(!expOpen)}
           >
-            <div className="w-full hidden md:grid md:grid-cols-3 md:text-xl ">
+            <div className="w-full hidden md:grid md:grid-cols-3 lg:text-lg">
               <div className="">Freelance</div>
               <div className="">Fullstack Web Developer</div>
               <div className="text-end">May 2025 - Now</div>
@@ -37,7 +37,9 @@ export default function Experience() {
             </div>
             {!expOpen && (
               <div
-                className={!expOpen ? `w-full grid md:grid-cols-3` : `hidden`}
+                className={
+                  !expOpen ? `w-full grid md:grid-cols-3 font-thin` : `hidden`
+                }
               >
                 <div className=""></div>
                 <div className=" text-[#ffffffd0] md:w-full w-[88%]">
@@ -60,7 +62,7 @@ export default function Experience() {
             }
             onClick={() => setExpOpen(!expOpen)}
           >
-            <div className="w-full hidden md:grid md:grid-cols-3 md:text-xl ">
+            <div className="w-full hidden md:grid md:grid-cols-3 lg:text-lg">
               <div className="">UniByte LLP</div>
               <div className="">MERN Developer</div>
               <div className="text-end">Feb 2024 - May 2025</div>
@@ -75,7 +77,9 @@ export default function Experience() {
             </div>
             {expOpen && (
               <div
-                className={expOpen ? `w-full grid md:grid-cols-3` : `hidden`}
+                className={
+                  expOpen ? `w-full grid md:grid-cols-3 font-thin` : `hidden`
+                }
               >
                 <div className=""></div>
                 <div className=" text-[#ffffffd0]">

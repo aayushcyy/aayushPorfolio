@@ -18,15 +18,15 @@ import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
-    <div className="w-full h-screen flex flex-col justify-start md:gap-16 gap-12 pt-28 font-funnel text-white md:px-40 px-5  relative overflow-hidden">
+    <div className="w-full h-screen flex flex-col justify-start md:gap-16 gap-12 pt-28 font-funnel text-white lg:px-[10vw] md:px-40 px-5  relative overflow-hidden">
       {/* Heading */}
       <div className="flex md:flex-row flex-col gap-8 md:gap-0 justify-between">
         <div className="flex flex-col md:gap-5 gap-3">
-          <p className="md:text-5xl text-3xl">
+          <p className="text-[clamp(1.5rem,_2vw_+_1rem,_5rem)] leading-tight">
             Ready to start your next project?
             <br className="md:flex hidden" /> I am.
           </p>
-          <p className="text-lg font-normal">
+          <p className="text-[clamp(1rem,_1rem_+_0.2vw,_2rem)] font-normal">
             Whether it's a freelance project or a full-time role, I'd love to
             hear from you.
           </p>

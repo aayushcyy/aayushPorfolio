@@ -23,12 +23,12 @@ export default function SkillBar({ value, label, icon }) {
 
   return (
     <div className="flex flex-col md:gap-4 gap-3" ref={ref}>
-      <div className="flex justify-between text-xl">
+      <div className="flex justify-between items-center text-xl">
         <div className="flex items-center gap-3">
           {icon}
-          <p>{label}</p>
+          <p className="text-[clamp(1rem,_1rem_+_0.2vw,_2rem)]">{label}</p>
         </div>
-        <p>{progress}%</p>
+        <p className="text-[clamp(1rem,_1rem_+_0.2vw,_2rem)]">{progress}%</p>
       </div>
       <div>
         <Progress

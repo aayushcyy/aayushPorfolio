@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <div className="w-full md:h-[100vh] h-[90vh] flex md:justify-center md:items-center text-white font-funnel lg:px-[10.5%] md:px-10 px-5 pt-24 md:pt-0">
+    <div className="w-full md:h-[100vh] h-[90vh] flex md:justify-center md:items-center text-white font-funnel lg:px-[10vw] md:px-10 px-5 pt-24 md:pt-0">
       <div className="flex md:flex-row flex-col md:gap-0 gap-[3.5rem] w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-end">
           <motion.div

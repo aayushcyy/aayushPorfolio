@@ -57,7 +57,7 @@ export default function About() {
     { name: "Redux", icon: "SiRedux", color: "#764ABC" },
   ];
   return (
-    <div className="w-full flex justify-center items-center text-white font-funnel md:px-40 px-5 md:py-20 py-10">
+    <div className="w-full flex justify-center items-center text-white font-funnel lg:px-[10vw] md:px-40 px-5 md:py-20 py-10">
       <div className="flex md:flex-row flex-col gap-15 w-full md:justify-between">
         <div className="flex flex-col gap-2 justify-between">
           <div className="flex items-center gap-2">
@@ -65,8 +65,8 @@ export default function About() {
             <p className="uppercase">About me</p>
           </div>
         </div>
-        <div className="md:w-[65%] h-full flex flex-col items-start gap-4">
-          <p className="text-3xl md:font-medium">Crafting Digital Excellence</p>
+        <div className="md:w-[70%] h-full flex flex-col items-start gap-4">
+          <p className="text-3xl">Crafting Digital Excellence</p>
           <p className="text-lg font-thin">
             I enjoy turning ideas into clean, functional digital experiences -
             bringing both frontend finesse and backend logic to the table.
@@ -76,9 +76,9 @@ export default function About() {
           <p className="text-lg font-thin my-4">
             Here are the tools and technologies I work with:
           </p>
-          <div className="flex md:flex-row flex-col md:gap-20 gap-12">
+          <div className="flex flex-col lg:gap-10 gap-12">
             {/* Skills */}
-            <div className="flex flex-wrap gap-x-3 md:gap-y-0 gap-y-1.5 md:w-[90%]">
+            <div className="flex flex-wrap gap-x-3 md:gap-y-2 gap-y-1.5 md:w-[90%]">
               {techSkills.map((skill, index) => {
                 const IconComponent = icons[skill.icon];
                 return (
@@ -93,7 +93,7 @@ export default function About() {
               })}
             </div>
             {/* Progress Bars */}
-            <div className="w-full flex flex-col gap-7">
+            <div className="lg:w-[65%] md:w-[100%] flex flex-col gap-5">
               {/* Frontend */}
               <SkillBar
                 label="Frontend Development"
