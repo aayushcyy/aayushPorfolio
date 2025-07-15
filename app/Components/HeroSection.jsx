@@ -30,7 +30,7 @@ export default function HeroSection() {
           <p className="text-[clamp(1.5rem,_2vw_+_1rem,_5rem)] leading-tight">
             Hi, I'm Aayush. <br /> A Full Stack Developer
           </p>
-          <p className="md:text-xl text-lg font-thin md:w-[65%] w-full">
+          <p className="text-[clamp(1rem,_1rem_+_0.2vw,_2rem)] font-thin md:w-[75%] w-full">
             and designer crafting fast, scalable, and user-friendly web
             applications. I help you make a lasting impression online through
             clean code and impactful design.
