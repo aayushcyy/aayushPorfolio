@@ -27,7 +27,7 @@ export default function HeroSection() {
           </motion.div>
         </div>
         <div className="lg:w-[55%] sm:w-[75%] w-full h-full flex flex-col items-start md:gap-13 gap-2">
-          <p className="text-[clamp(1.8rem,3vw,3rem)]">
+          <p className="text-[clamp(1.5rem,_2vw_+_1rem,_5rem)] leading-tight">
             Hi, I'm Aayush. <br /> A Full Stack Developer
           </p>
           <p className="md:text-xl text-lg font-thin md:w-[65%] w-full">
