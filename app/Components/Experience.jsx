@@ -65,7 +65,7 @@ export default function Experience() {
             <div className="w-full hidden md:grid md:grid-cols-3 lg:text-lg">
               <div className="">UniByte LLP</div>
               <div className="">MERN Developer</div>
-              <div className="text-end">Feb 2024 - May 2025</div>
+              <div className="text-end">Nov 2023 - Aug 2025</div>
             </div>
             {/* mobile settings */}
             <div className="md:hidden flex justify-between">
@@ -73,7 +73,7 @@ export default function Experience() {
                 <div className="">UniByte LLP</div>
                 <div className="text-[#a8a8a8]">MERN Developer</div>
               </div>
-              <div className="text-end">Feb 2024 - May 2025</div>
+              <div className="text-end">Nov 2023 - Aug 2025</div>
             </div>
             {expOpen && (
               <div
@@ -83,12 +83,11 @@ export default function Experience() {
               >
                 <div className=""></div>
                 <div className=" text-[#ffffffd0]">
-                  Worked on an in-house CRM to add support for Facebook leads.
-                  <br />
-                  Added support for email notifications for new leads. <br />
-                  Helped the team migrate the backend from Firebase to Node.js
-                  (Express) and MongoDB. <br /> Built pages and components for
-                  the CRM using ShadCN and React
+                  Designed, developed, and maintained full-stack web
+                  applications using React, Next.js, Node.js (Express), and
+                  MongoDB, enhancing scalability and performance. Migrated
+                  backend from Firebase to Node.js with MongoDB, reducing query
+                  latency and improving system reliability
                 </div>
                 <div className=""></div>
               </div>
